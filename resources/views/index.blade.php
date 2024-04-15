@@ -1,10 +1,6 @@
 @include("partials.header")
-    
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
-    <button id="loginButton">Show Login Form</button>
-    <form action="/action_page.php" method="post" style="display: none;">
+    <center>
+    <form action="/action_page.php" method="post">
         <div class="imgcontainer">
             <center>
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-UGb6g9wOEv1OcSwAGoDpLI7uxzPrrcqnngjODVVP7TAUMTrJ3jO02u8jJ5Ex-qkIo1o&usqp=CAU" alt="Avatar" class="avatar">
@@ -29,14 +25,5 @@
           <span class="psw">Forgot <a href="#">password?</a></span>
         </div>
       </form>
-      <script>
-        document.getElementById('loginButton').addEventListener('click', function() {
-            var loginForm = document.getElementById('loginForm');
-            if (loginForm.style.display === 'none') {
-                loginForm.style.display = 'block';
-            } else {
-                loginForm.style.display = 'none';
-            }
-        });
-    </script>
+    </center>
 @include("partials.footer")
